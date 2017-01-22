@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Application Form</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- your html goes here -->
+  <h1>Application Form</h1>
+
+  <p><span id="descriptiontext">Please enter your name, salary requirement as a 
+    number without commas, and select the job you are applying for.</span></p>
+
+  <form action="/application-success" method="POST">
+    <label for="firstname">First Name:</label>
+    <input id="firstname" type="text" name="textfield"><br>
+    <label for="lastname">Last Name: </label>
+    <input id="lastname" type="text" name="textfield"><br>
+    <label for="salaryrequirement">Salary Requirement (ex. '100000'):</label>
+    <input id="salaryrequirement" type="text" name="textfield"><br>
+    <label for="jobdesired">Job Desired:</label>
+    <select id="jobdesired" name="select">
+      <option value="1">Software Engineer</option>
+      <option value="2">QA Engineer</option>
+      <option value="3">Product Manager</option>
+    </select><br><br>
+    <input type="submit" name="submit">
+
+
+
+  </form>
+
+</body>
+</html>
